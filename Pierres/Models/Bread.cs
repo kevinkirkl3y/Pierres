@@ -17,7 +17,7 @@ namespace Pierres
       }
       else 
       {
-        int price = ((LoafCount/3) * 10) + ((LoafCount % 3) * 5);
+        int price = ((LoafCount/3) * 11) + ((LoafCount % 3) * 5);
         return price;
       }
     }
