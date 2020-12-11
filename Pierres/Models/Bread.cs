@@ -2,11 +2,11 @@ namespace Pierres
 {
   public class Bread
   {
-    public int loafCount;
+    public int LoafCount { get; set;}
     
     public Bread(int aLoafCount)
     {
-      loafCount = aLoafCount;
+      LoafCount = aLoafCount;
     } 
 
   }
