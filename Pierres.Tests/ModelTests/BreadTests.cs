@@ -26,7 +26,7 @@ namespace Pierres.Tests
       int loafCount = 1;
       Bread newOrder = new Bread(loafCount);
       int result = newOrder.LoafPricing();
-      Assert.AreEqual(result, 5);
+      Assert.AreEqual(5, result);
     }
     [TestMethod]
     public void LoafPricing_CorrectlyReturnsPriceConsideringBuyTwoGetOne_Int()
@@ -34,7 +34,7 @@ namespace Pierres.Tests
       int loafCount = 5;
       Bread newOrder = new Bread(loafCount);
       int result = newOrder.LoafPricing();
-      Assert.AreEqual(result, 20);
+      Assert.AreEqual(20, result);
     }
   }
 }
