@@ -18,7 +18,7 @@ namespace Pierres.Tests
       int pastryCount = 3;
       Pastry newOrder = new Pastry(pastryCount);
       int result = newOrder.PastryCount;
-      Assert.AreEqual(result, pastryCount);
+      Assert.AreEqual(pastryCount, result);
     }
     [TestMethod]
     public void PastryPricing_CorrectlyDisplaysPricingOfOnePastry_Int()
