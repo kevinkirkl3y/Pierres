@@ -10,7 +10,7 @@ namespace Pierres
     } 
     public int LoafPricing()
     {
-      int price = LoafCount * 5;
+      int price = LoafCount * 6;
       return price;
     }
 
