@@ -34,7 +34,7 @@ namespace Pierres.Tests
       int pastryCount = 6;
       Pastry newOrder = new Pastry(pastryCount);
       int result = newOrder.PastryPricing();
-      Assert.AreEqual(result, 10);
+      Assert.AreEqual(10, result);
     }
   }
 }
