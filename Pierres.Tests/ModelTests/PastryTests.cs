@@ -26,7 +26,7 @@ namespace Pierres.Tests
       int pastryCount = 1;
       Pastry newOrder = new Pastry(pastryCount);
       int result = newOrder.PastryPricing();
-      Assert.AreEqual(result, 2);
+      Assert.AreEqual(2, result);
     }
     [TestMethod]
     public void PastryPricing_CorrectlyDisplaysPricingConsideringThreeForFiveDeal_Int()
