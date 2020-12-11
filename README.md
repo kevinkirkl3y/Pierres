@@ -8,6 +8,19 @@
   
 
 ## Specifications
+<!-- 
+Class Bread: contain number of loafs
+cost method: if number of loafs % 2 != 0
+            Math.Floor(number of loafs/2) * 5;
+            else 
+            (number of loafs/2)*5 
+            
+
+class Pastry: contains number of pastries
+
+
+
+-->
 
 | Describe: numBumble() | Input | Output |
 | :-----------------------------------| :------------- | :------------- |
