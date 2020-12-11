@@ -6,6 +6,10 @@ namespace Pierres.Tests
   [TestClass]
   public class BreadTests
   {
-    
+    [TestMethod]
+    public void Bread_CreatesInstanceOfBreadClass_True()
+    {
+      
+    }
   }
 }
