@@ -4,7 +4,7 @@ namespace Pierres
   {
     public int loafCount;
     
-    public Book(int aLoafCount)
+    public Bread(int aLoafCount)
     {
       loafCount = aLoafCount;
     } 

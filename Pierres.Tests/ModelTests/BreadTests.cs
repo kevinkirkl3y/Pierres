@@ -9,7 +9,7 @@ namespace Pierres.Tests
     [TestMethod]
     public void Bread_CreatesInstanceOfBreadClass_True()
     {
-      Bread newOrder = new Bread();
+      Bread newOrder = new Bread(1);
       Assert.AreEqual(typeof(Bread), newOrder.GetType());
     }
     [TestMethod]
@@ -18,7 +18,7 @@ namespace Pierres.Tests
       int loafCount = 3;
 
       Bread newOrder = new Bread(loafCount);
-      int result = loafCount;
+      int result = newOrder.loafCount;
       Assert.AreEqual(loafCount, result);
     }
   }
