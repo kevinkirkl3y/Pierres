@@ -15,10 +15,11 @@ namespace Pierres.Tests
     [TestMethod]
     public void Bread_ReturnsNumberOfLoaves_Int()
     {
-      Bread newOrder = new Bread();
-      newOrder.loafCount = 3;
-      int result = newOrder.loafCount;
-      Assert.AreEqual(newOrder.loafCount, result);
+      int loafCount = 3;
+
+      Bread newOrder = new Bread(loafCount);
+      int result = loafCount;
+      Assert.AreEqual(loafCount, result);
     }
   }
 }
