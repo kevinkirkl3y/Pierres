@@ -8,6 +8,11 @@ namespace Pierres
     {
       LoafCount = aLoafCount;
     } 
+    public int LoafPricing()
+    {
+      int price = LoafCount * 5;
+      return price;
+    }
 
   }
 }
