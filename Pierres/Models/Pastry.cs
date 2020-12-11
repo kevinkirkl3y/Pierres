@@ -12,9 +12,10 @@ namespace Pierres
     {
       if (PastryCount == 1)
       {
-        int price = PastryCount * 2;
+        int price = PastryCount * 3;
         return price;
       }
+      return 0;
     }
   }
 }
