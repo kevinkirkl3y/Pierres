@@ -8,5 +8,13 @@ namespace Pierres
     {
       PastryCount = aPastryCount;
     }
+    public int PastryPricing()
+    {
+      if (PastryCount == 1)
+      {
+        int price = PastryCount * 2;
+        return price;
+      }
+    }
   }
 }
