@@ -31,10 +31,10 @@ namespace Pierres.Tests
     [TestMethod]
     public void PastryPricing_CorrectlyDisplaysPricingConsideringThreeForFiveDeal_Int()
     {
-      int pastryCount = 6;
+      int pastryCount = 10;
       Pastry newOrder = new Pastry(pastryCount);
       int result = newOrder.PastryPricing();
-      Assert.AreEqual(10, result);
+      Assert.AreEqual(17, result);
     }
   }
 }

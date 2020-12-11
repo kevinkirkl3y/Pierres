@@ -17,10 +17,9 @@ namespace Pierres
       }
       else
       {
-       int price = (PastryCount * 2) - ((PastryCount / 3) * 1); 
+       int price = (PastryCount * 2) - ((PastryCount / 3)); 
       return price;
-      }
-      
+      }      
     }
   }
 }
