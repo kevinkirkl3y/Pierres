@@ -18,10 +18,6 @@ namespace StoreFront
       {
         PastryOrder();
       }
-
-
-
-
     }
     public static void Greeting()
     {
@@ -33,6 +29,7 @@ namespace StoreFront
       Console.WriteLine("--------------------------------------------------------------------");
       Console.WriteLine("What would you like to order? (bread/pastry)");
     }
+    
     public static void BreadOrder()
     {
       Console.WriteLine("Of course! How many baguettes would you like? (enter number: Ex.'5')");
@@ -47,15 +44,11 @@ namespace StoreFront
       if (response == "pastry" || response == "Pastry")
       {
         Console.WriteLine("Your total for bread is $" + strBreadPrice);
-        PastryOrder();
-        
       }
       else if (response == "total" || response == "Total")
       {
         Console.WriteLine("Your total for bread is $" + strBreadPrice);
-      }
-      
-      
+      }  
     }
     public static void PastryOrder()
     {
@@ -69,13 +62,13 @@ namespace StoreFront
       string strPastryPrice = pastryPrice.ToString();
       if (response == "bread" || response == "Bread")
       {
-        Console.WriteLine("Your total for pastries is $" + strPastryPrice) ;
+        Console.WriteLine("Your total for pastries is $" + strPastryPrice);
         BreadOrder();
         
       }
       else if (response == "total" || response == "Total")
       {
-        Console.WriteLine("Your total for pastries is $" + strPastryPrice) ;
+        Console.WriteLine("Your total for pastries is $" + strPastryPrice);
       }
     }
   }
