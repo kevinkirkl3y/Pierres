@@ -40,7 +40,7 @@ namespace Pierres
       Console.WriteLine("Can I get you any pastries or would you like to view your total? (pastry/total)");
       int breadPrice = breadOrder.LoafPricing();
       total += breadOrder.LoafPricing();
-      string strBreadPrice = total.ToString();
+      string strBreadPrice = breadPrice.ToString();
       string response = Console.ReadLine();
       
       if (response == "pastry" || response == "Pastry")
@@ -64,7 +64,7 @@ namespace Pierres
       string response = Console.ReadLine();
       int pastryPrice = pastryOrder.PastryPricing();
       total += pastryOrder.PastryPricing();
-      string strPastryPrice = total.ToString();
+      string strPastryPrice = pastryPrice.ToString();
       if (response == "bread" || response == "Bread")
       {
         Console.WriteLine("Your total for pastries is $" + strPastryPrice);
