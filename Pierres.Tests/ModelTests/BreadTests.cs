@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Pierres;
+using Pierres.Models;
 
 namespace Pierres.Tests
 {

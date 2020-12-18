@@ -1,4 +1,4 @@
-namespace Pierres
+namespace Pierres.Models
 {
   public class Pastry
   {

@@ -1,7 +1,7 @@
 using System;
-using Pierres;
+using Pierres.Models;
 
-namespace StoreFront
+namespace Pierres
 {
 
   public class Program
@@ -9,14 +9,15 @@ namespace StoreFront
     public static void Main()
     {
       Greeting();
+      int Price = 0;
       string response = Console.ReadLine();
       if (response == "bread" || response == "Bread")
       {
-        BreadOrder();
+        BreadOrder(0);
       }
       else if (response == "pastry" || response == "Pastry")
       {
-        PastryOrder();
+        PastryOrder(0);
       }
     }
     public static void Greeting()
@@ -30,7 +31,7 @@ namespace StoreFront
       Console.WriteLine("What would you like to order? (bread/pastry)");
     }
     
-    public static void BreadOrder()
+    public static void BreadOrder(int total)
     {
       Console.WriteLine("Of course! How many baguettes would you like? (enter number: Ex.'5')");
       int loafCount = int.Parse(Console.ReadLine());
@@ -38,19 +39,22 @@ namespace StoreFront
       Console.WriteLine("Okay, I have you down for " + loafCount + " of our fresh baguettes.");
       Console.WriteLine("Can I get you any pastries or would you like to view your total? (pastry/total)");
       int breadPrice = breadOrder.LoafPricing();
-      string strBreadPrice = breadPrice.ToString();
+      total += breadOrder.LoafPricing();
+      string strBreadPrice = total.ToString();
       string response = Console.ReadLine();
       
       if (response == "pastry" || response == "Pastry")
       {
         Console.WriteLine("Your total for bread is $" + strBreadPrice);
+        PastryOrder(total);
       }
       else if (response == "total" || response == "Total")
       {
         Console.WriteLine("Your total for bread is $" + strBreadPrice);
+        OrderTotal(total);
       }  
     }
-    public static void PastryOrder()
+    public static void PastryOrder(int total)
     {
       Console.WriteLine("Of course! How many pastries would you like? (enter number: Ex.'5')");
       int pastryCount = int.Parse(Console.ReadLine());
@@ -59,17 +63,23 @@ namespace StoreFront
       Console.WriteLine("Can I get you any baguettes or would you like to view your total? (bread/total)");
       string response = Console.ReadLine();
       int pastryPrice = pastryOrder.PastryPricing();
-      string strPastryPrice = pastryPrice.ToString();
+      total += pastryOrder.PastryPricing();
+      string strPastryPrice = total.ToString();
       if (response == "bread" || response == "Bread")
       {
         Console.WriteLine("Your total for pastries is $" + strPastryPrice);
-        BreadOrder();
+        BreadOrder(total);
         
       }
       else if (response == "total" || response == "Total")
       {
         Console.WriteLine("Your total for pastries is $" + strPastryPrice);
+        OrderTotal(total);
       }
+    }
+    public static void OrderTotal(int total)
+    {
+      Console.WriteLine("Your total for both baguettes and pastries is $" + total);
     }
   }
 }
