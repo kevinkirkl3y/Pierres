@@ -34,6 +34,7 @@ View my live website here:
 ## Known Bugs
 
 _As of 12.11.2020 the program is unable to generate a grand total for both pastries and bread ordered in the same purchase. Will update as necessary._
+_12.17.2020 Aforementioned bug has been resolved. User is able to generate total price for both pastry and bread orders combined._
 
 
 
